@@ -1,0 +1,124 @@
+/* ===== General ===== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f7d8ff, #cbe4ff, #ffd6ea);
+    color: #444;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(6px);
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #8a46c7;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+}
+
+nav a.active, nav a:hover {
+    color: #a34ef5;
+}
+
+/* ===== SOBRE MÍ ===== */
+.sobre-container {
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagen */
+.sobre-imagen img {
+    width: 100%;
+    max-width: 420px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Texto */
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h1 {
+    color: #7a3db8;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    line-height: 1.6em;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Caja de contacto */
+.contacto-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f3e2ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #00000020;
+}
+
+.contacto-box h2 {
+    margin: 0 0 10px 0;
+    color: #7a3db8;
+}
+
+.contacto-box a {
+    color: #a34ef5;
+    font-weight: bold;
+}
+
+.contacto-box a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.5);
+    color: #7a3db8;
+    margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .sobre-imagen img {
+        max-width: 300px;
+        height: auto;
+    }
+}
