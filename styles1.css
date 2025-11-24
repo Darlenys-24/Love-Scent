@@ -61,6 +61,7 @@ nav a.active, nav a:hover {
     transition: 0.3s;
 }
 
+/* Animación cuando se agrega */
 .carrito-indicador.nuevo {
     transform: scale(1.3);
 }
@@ -205,7 +206,7 @@ button.agregar:hover {
     color: white;
 }
 
-/* Botón eliminar */
+/* ❌ Botón eliminar (X) */
 .btn-eliminar {
     background: #ffb3c6;
     color: #ffffff;
@@ -289,10 +290,11 @@ button.agregar:hover {
     }
 }
 
-/* ✅ Ajuste para que la imagen NO se salga del teléfono */
-.producto img {
-    max-width: 100%;
+/* ⭐ Corrección FINAL para la imagen del HERO */
+.hero-img {
     width: 100%;
-    height: auto !important;
-    object-fit: contain;
+    max-width: 460px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
 }
