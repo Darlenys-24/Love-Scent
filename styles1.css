@@ -77,6 +77,14 @@ nav a.active, nav a:hover {
     color: #7a3db8;
 }
 
+.hero-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
 /* Productos */
 .productos {
     display: flex;
@@ -293,8 +301,9 @@ button.agregar:hover {
 /* ⭐ Corrección FINAL para la imagen del HERO */
 .hero-img {
     width: 100%;
-    max-width: 460px;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto 15px auto;
 }
+
