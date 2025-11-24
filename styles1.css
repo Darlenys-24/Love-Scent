@@ -259,7 +259,7 @@ button.agregar:hover {
     text-align: center;
 }
 
-/* Responsive */
+/* Responsive especial para iPhone 12 y móviles */
 @media (max-width: 768px) {
     .productos {
         flex-direction: column;
@@ -267,15 +267,27 @@ button.agregar:hover {
     }
 
     .producto {
-        width: 90%;
+        width: 95%;
+        max-width: 400px; /* Evita que se comprima demasiado */
     }
 
     .producto img {
-        height: 250px;  /* Más alto en pantallas pequeñas */
+        width: 100%;
+        height: 320px !important;   /* Altura fija más grande */
+        object-fit: cover;
+        border-radius: 12px;
     }
 
-#carrito-panel {
-  top: 0;
+    #carrito-panel {
+        top: 0;
+    }
 }
 
+/* Ajuste adicional para pantallas muy pequeñas (iPhone 12 y similares) */
+@media (max-width: 420px) {
+    .producto img {
+        height: 350px !important;  /* Se ve completo y grande */
+    }
 }
+
+
